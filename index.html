@@ -1,30 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Kontak</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="wrapper">
-        <section id="contact">
-            <h2>Hubungi Kami</h2>
-            <form action="https://script.google.com/macros/s/AKfycbxkZF0N0izn_LTe376lLpSQYZn194opOrdbwWaM80s_uc5-6vugJJWpEIhzjNbp6hr_-w/exec" method="post" id="contact-form">
-                <input type="text" id="fname" name="name" placeholder="Nama" required><br>
-                <input type="text" id="email" name="email" placeholder="Email" required><br>
-                <textarea id="message" name="message" placeholder="Pesan" style="height:200px" required></textarea><br>
-                <input type="submit" value="Kirim" id="submit-btn">
-            </form>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo"> <span class="highlighted">M.</span>Zaenal Arifin</a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#services" class="nav-item">Services</a>
+          <a href="#projects" class="nav-item">projects</a>
+          <a href="#contact" class="nav-item">contact</a>
+        </div>
+
+        <div class="toggler">
+          <span class="line"></span><span class="line"></span
+          ><span class="line"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero container" id="home">
+      <div class="hero-info">
+       <h1 class="title">M.<span class="highlighted">Zaenal Arifin</span></h1>
+       <p class="hero-description">I,am ready to work, and join your team</p>
+       <p class="hero-description">-Honest,Tenacious,Discipline-</p>
+
+       <a href="#services" class="btn hero-btn">Services</a>
+     </div>
+
+     <div class="hero-img">
+       <img src="./image/profil1.png" alt="zaaenal" />
+     </div>
+</section>
+
+<section class="about container" id="about">
+  <div class="about-img">
+    <img src="./image/profil2.jpg" alt="zaenal" />
+  </div>
+
+  <div class="about-info">
+    <h2 class="secondery-title">About Me</h2>
+
+    <p class="description">
+      Let me introduce myself, my name is Mohamad Zaenal Arifin, 
+      I like looking for new experiences, dare to take risks, and I like analyzing things,
+      especially the economic field. And I graduated with a bacholer`s degree in development economics
+    </p>
+
+    <p class="description">
+      Some of my achievements in pursuing economics and research have been as a presenter for jornal publications, and have joined the field of journalism.
+    </p>
+
+    <p class="description">
+      Apart form that, other skills include being able to master the use of office software ( Microsoft Word, Excel, Powe point). Maaster the basics of phothoshop, HTML, CSS.
+    </p>
+
+    <a href="#" class="btn btn-secondery">More</a>
+  </div>
+
+
+  
+</section>
+
+<div class="services container" id="services">
+  <div class="services-header">
+    <h2 class="secondery-title">Services</h2>
+  </div>
+
+  <div class="grid services-grid">
+    <div class="grid-item services-item">
+      <i class="fa-solid fa-computer"></i>
+      <h3>Data Analyst</h3>
+      <p class="description">
+        Analyzed the impact of tourist destinations on the household economy.
+      </p>
     </div>
-    <div class="toast" id="toast"> Pesan Terkirim_
-        <span class="icon"><i class="fa-solid fa-check"></i></span>
+    <div class="grid-item services-item">
+      <i class="fa-solid fa-wheat-awn"></i>
+
+      <h3>Farming</h3>
+      <p class="description">
+        I have been farming for 7 months, training my mentality.
+      </p>
     </div>
-    <script src="script.js"></script>
-    <footer>
-        <p>&copy; Mohamad Zaenal Arifin 2024.</p>
-    </footer>
-</body>
+    <div class="grid-item services-item">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Administration</h3>
+      <p class="description">
+       managed an organization, understands correspondence, compiles documents.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="projects container" id="projects">
+  <div class="projects-header">
+    <h2 class="secondery-title">Projects</h2>
+
+    <div class="projects-tab">
+      <button class="projects-tab-btn projects-tab-btn-active" id="all">
+        All
+      </button>
+      <button class="projects-tab-btn" id="MBKM">Research</button>
+      <button class="projects-tab-btn" id="FARMING">Harvest</button>
+      <button class="projects-tab-btn" id="PREPAREDOCUMENTS">Prepare various documents</button>
+    </div>
+  </div>
+
+  <div class="grid projects-grid">
+    <div class="grid-item projects-item all MBKM">
+      <img src="./image/Research1.png" alt="" />
+        <p>MBKM UTM 2022</p>
+    </div>
+    <div class="grid-item projects-item all MBKM">
+      <img src="./image/research2.png" alt="" />
+        <p>Research</p>
+    </div>
+    <div class="grid-item projects-item all FARMING">
+      <img src="./image/Harvest.png" alt="" />
+      <p>Panen padi</p>
+    </div>
+    <div class="grid-item projects-item all FARMING">
+      <img src="./image/harvest1.png" alt="" />
+      <p>Harvest</p>
+    </div>
+    <div class="grid-item projects-item all PREPAREDOCUMENTS">
+      <img src="./image/doc1.png" alt="" />
+      <p>Prepare documents</p>
+    </div>
+    <div class="grid-item projects-item all PREPAREDOCUMENTS">
+      <img src="./image/doc2.png" alt="" />
+      <p>Prepare documents</p>
+    </div>
+  </div>
+</section>
+
+<section class="container contact" id="contact">
+  <div class="contact-info">
+    <h2 class="secondery-title">Contact</h2>
+    <div class="info-container">
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-info-data">
+          <h3>Address</h3>
+          <p>Bojonegoro, Jawa Timur</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-info-data">
+          <h3>Email</h3>
+          <p>zaenalarifinmohamad9@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+          </svg>
+        </div>
+        <div class="contact-info-data">
+          <h3>Telegram</h3>
+          <p>+62 831 3107 2963</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email" />
+      <textarea
+        name="message"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+      ></textarea>
+      <button class="btn submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+    <footer class="footer">
+  <p>&copy; 2024 MZA All Right Reserved</p>
+</footer>
+
+
+        <script src="./script/Script.js"></script>
+  </body>
 </html>
